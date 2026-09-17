@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travelia — Discover Georgia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://static.barcelo.com/content/dam/bpt/posts/2025/4/holidays-to-georgia_holidays-in-georgia.jpg" rel="preload" as="image">  
+</head>
+
+<body>
+>
+
+    <header class="header">
+        <div class="container nav">
+
+            <a href="#" class="logo">
+                Travel<span>ia</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#tours">Tours</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#tours" class="nav-btn">
+                Explore Tours
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <p class="hero-small">
+                DISCOVER THE BEAUTY OF GEORGIA
+            </p>
+
+            <h1>
+                Your Journey<br>
+                <span>Begins Here.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover breathtaking mountains, ancient cities,
+                unforgettable landscapes and authentic Georgian culture.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#tours" class="primary-btn">
+                    Explore Tours →
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    Learn More
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- SEARCH BOX -->
+
+        <div class="search-wrapper container">
+
+            <div class="search-box">
+
+                <div class="search-item">
+                    <span class="search-icon"></span>
+
+                    <div>
+                        <small>Destination</small>
+
+                        <select id="heroDestinationSelect">
+                            <option>Where do you want to go?</option>
+                            <option>Kazbegi</option>
+                            <option>Kakheti</option>
+                            <option>Batumi</option>
+                            <option>Svaneti</option>
+                            <option>Borjomi</option>
+                            <option>Tbilisi</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="search-item">
+                    <span class="search-icon"></span>
+
+                    <div>
+                        <small>Date</small>
+                        <input type="date">
+                    </div>
+                </div>
+
+
+                <div class="search-item">
+                    <span class="search-icon"></span>
+
+                    <div>
+                        <small>Guests</small>
+
+                        <select>
+                            <option>2 Guests</option>
+                            <option>1 Guest</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5+ Guests</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <button class="search-btn">
+                    Search Tours
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= POPULAR TOURS ================= -->
+
+    <section class="section" id="tours">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">
+                        EXPLORE OUR TOURS
+                    </p>
+
+                    <h2>
+                        Popular Experiences
+                    </h2>
+                </div>
+
+                <a href="#" class="view-all">
+                    View all tours →
+                </a>
+
+            </div>
+
+            <!-- TOUR LIVE SEARCH & PRICE FILTER -->
+            <div class="filter-controls" style="display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap;">
+                <input type="text" id="tourSearchInput" placeholder="Search tours..." style="padding: 10px 15px; border-radius: 8px; border: 1px solid #ccc; flex: 1; min-width: 200px;">
+                <input type="number" id="tourMaxPriceInput" placeholder="Max Price (₾)" style="padding: 10px 15px; border-radius: 8px; border: 1px solid #ccc; width: 150px;">
+            </div>
+
+            <div class="tour-grid" id="tourGrid">
+                <!-- Tour cards will be rendered dynamically by JavaScript -->
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DESTINATIONS ================= -->
+
+    <section class="destinations" id="destinations">
+
+        <div class="container">
+
+            <div class="section-heading light">
+
+                <div>
+                    <p class="section-label">
+                        FIND YOUR DESTINATION
+                    </p>
+
+                    <h2>
+                        Explore Georgia
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="destination-grid">
+
+                <div class="destination-card large">
+                    <img src="/kazbegi" alt="Kazbegi">
+                    <div>
+                        <h3>Kazbegi</h3>
+                        <span>12 Tours</span>
+                    </div>
+                </div>
+
+
+                <div class="destination-card">
+                    <img src="/svaneti k.jpg" alt="Svaneti">
+                    <div>
+                        <h3>Svaneti</h3>
+                        <span>8 Tours</span>
+                    </div>
+                </div>
+
+
+                <div class="destination-card">
+                    <img src="/kakheti.jpg" alt="Kakheti">
+                    <div>
+                        <h3>Kakheti</h3>
+                        <span>15 Tours</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY US ================= -->
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <div class="about-grid">
+
+                <div class="about-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1521292270410-a8c4d716d518?auto=format&fit=crop&w=1000&q=80"
+                        alt="Georgia">
+
+                    <div class="experience-box">
+                        <strong>10+</strong>
+                        <span>Years of Experience</span>
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <p class="section-label">
+                        WHY TRAVELIA
+                    </p>
+
+                    <h2>
+                        We don't just plan trips.
+                        <span>We create memories.</span>
+                    </h2>
+
+                    <p>
+                        From hidden mountain villages to the warm streets
+                        of Tbilisi, we help travelers discover the real
+                        Georgia.
+                    </p>
+
+                    <!-- FEATURE GRID LIVE SEARCH -->
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" id="featureSearchInput" placeholder="Search features..." style="padding: 10px 15px; border-radius: 8px; border: 1px solid #ccc; width: 100%;">
+                    </div>
+
+                    <div class="features" id="featureGrid">
+                        <!-- Features will be rendered dynamically by JavaScript -->
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section class="reviews">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">
+                        TRAVELERS LOVE US
+                    </p>
+
+                    <h2>
+                        What Our Guests Say
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="review-grid">
+
+                <article class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "Our Kazbegi tour was absolutely incredible.
+                        The views were breathtaking and our guide was
+                        amazing!"
+                    </p>
+
+                    <div class="review-author">
+                        <div class="avatar">AM</div>
+
+                        <div>
+                            <strong>Anna M.</strong>
+                            <small>Germany</small>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "Everything was perfectly organized.
+                        Georgia is beautiful and Travelia made our trip
+                        unforgettable."
+                    </p>
+
+                    <div class="review-author">
+                        <div class="avatar">JS</div>
+
+                        <div>
+                            <strong>James S.</strong>
+                            <small>United Kingdom</small>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "Amazing experience from beginning to end.
+                        I would definitely travel with them again."
+                    </p>
+
+                    <div class="review-author">
+                        <div class="avatar">EM</div>
+
+                        <div>
+                            <strong>Emma R.</strong>
+                            <small>France</small>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter" id="contact">
+
+        <div class="container newsletter-content">
+
+            <div>
+                <p class="section-label">
+                    STAY INSPIRED
+                </p>
+
+                <h2>
+                    Get travel inspiration<br>
+                    in your inbox.
+                </h2>
+            </div>
+
+            <form class="newsletter-form">
+
+                <input
+                    type="email"
+                    placeholder="Your email address"
+                    required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="#" class="logo">
+                    Travel<span>ia</span>
+                </a>
+
+                <p>
+                    Discover Georgia.<br>
+                    Create unforgettable memories.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>Explore</h4>
+
+                <a href="#tours">Tours</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#about">About Us</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Contact</h4>
+
+                <p>Tbilisi, Georgia</p>
+                <p>+995 555 123 456</p>
+                <p>hello@travelia.ge</p>
+
+            </div>
+
+
+            <div>
+
+                <h4>Follow Us</h4>
+
+                <div class="socials">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">TikTok</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Travelia. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
